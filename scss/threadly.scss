@@ -1,1 +1,13 @@
 /* Css file for threadly project */
+
+@import '_fonts';
+
+$ptsansfont : 'PT Sans Caption';
+
+body {
+    p {
+        font-family: $ptsansfont;
+        font-weight: 700;
+        font-size: 3em;
+    }
+}

@@ -1,3 +1,8 @@
 /* Css file for threadly project */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700");
+body p {
+  font-family: "PT Sans Caption";
+  font-weight: 700;
+  font-size: 3em; }
 
 /*# sourceMappingURL=threadly.css.map */
