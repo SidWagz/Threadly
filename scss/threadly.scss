@@ -5,9 +5,11 @@
 $ptsansfont : 'PT Sans Caption';
 
 body {
-    p {
-        font-family: $ptsansfont;
+
+    font-family: $ptsansfont;
+
+    .header {
         font-weight: 700;
-        font-size: 3em;
+        font-size: 2em;
     }
 }
