@@ -10,22 +10,24 @@
             </div>
         </div>
         <div class="section">
-            <div class="wrapper">
-                <form>
+            <div class="wrapper form">
+                <form name="comment-form">
                     <div class="form-element form-input">
-                        <input name="message" placeholder="Say something" />
+                        <input id="input-box" name="message" placeholder="Say something" />
                     </div>
                     <div class="form-element form-button">
-                        <button type="submit">POST</button>
+                        <button id="post-button" type="submit">POST</button>
                     </div>
                 </form>
             </div>
         </div>
         <div class="section">
             <div class="wrapper">
-
+                <ul id="comments">
+                </ul>
             </div>
         </div>
     </body>
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
     <script src="js/threadly.js"></script>
 </html>

@@ -3,13 +3,84 @@
 @import '_fonts';
 
 $ptsansfont : 'PT Sans Caption';
+$stdfontsize : 12pt;
+$postcolor: #54ff9f;
 
 body {
 
     font-family: $ptsansfont;
+    font-size: $stdfontsize;
+
+    .section {
+        max-width: 1080px;
+    }
 
     .header {
         font-weight: 700;
+        font-size: 3em;
+    }
+
+    .form {
+        font-size: 0;
+        margin: 50px 0;
+    }
+
+    .form-element {
+        display: inline-block;
+        font-size: $stdfontsize;
+        height: 50px;
+    }
+
+    .form-input {
+        // background-color: yellow;
+        width: 75%;
+        // border: 1px solid blue;
+    }
+
+    #input-box {
+        font-family: $ptsansfont;
+        max-width: 720px;
+        width: 100%;
+        height: 100%;
+        font-size: 1.5em;
+        outline: none;
+        box-sizing: border-box;
+        margin: 0;
+        vertical-align: top;
+    }
+
+    .form-button {
+        // background-color: red;
+        width: 25%;
+        // border: 1px solid red;
+    }
+
+    #post-button {
+        font-family: $ptsansfont;
+        font-weight: 700;
+        max-width: 120px;
+        width: 100%;
+        height: 100%;
         font-size: 2em;
+        background-color: white;
+        border: 4px solid $postcolor;
+        color: $postcolor;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin: 0;
+        vertical-align: top;
+        text-shadow: 0 0 2px #999;
+    }
+
+    #comments {
+        list-style: none;
+        padding: 0;
+    }
+
+    .list-comment {
+        font-size: 2em;
+        border-left: 2px solid $postcolor;
+        padding-left: 10px;
+        margin: 5px 0px;
     }
 }
