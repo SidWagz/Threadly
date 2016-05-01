@@ -11,6 +11,10 @@ body {
     font-family: $ptsansfont;
     font-size: $stdfontsize;
 
+    div {
+        box-sizing: border-box;
+    }
+
     .section {
         max-width: 1080px;
     }
