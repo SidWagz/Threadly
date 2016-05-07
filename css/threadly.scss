@@ -8,6 +8,8 @@ $postcolor: #54ff9f;
 
 body {
 
+    min-width: 240px;
+
     font-family: $ptsansfont;
     font-size: $stdfontsize;
 
@@ -19,34 +21,43 @@ body {
         max-width: 1080px;
     }
 
+    .wrapper {
+    }
+
     .header {
         font-weight: 700;
         font-size: 3em;
     }
 
     .form {
-        font-size: 0;
         margin: 50px 0;
     }
 
+    form[name="comment-form"] {
+        width: inherit;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .form-element {
-        display: inline-block;
         font-size: $stdfontsize;
-        height: 50px;
+        height: 3em;
     }
 
     .form-input {
         // background-color: yellow;
-        width: 75%;
         // border: 1px solid blue;
+        flex: 1 1 70%;
+        min-width: 120px;
+        margin-right: 10px;
     }
 
     #input-box {
         font-family: $ptsansfont;
-        max-width: 720px;
         width: 100%;
-        height: 100%;
-        font-size: 1.5em;
+        font-size: 30px;
+        margin-right: 10px;
         outline: none;
         box-sizing: border-box;
         margin: 0;
@@ -55,24 +66,25 @@ body {
 
     .form-button {
         // background-color: red;
-        width: 25%;
         // border: 1px solid red;
+        flex: 0 0 15%;
+        min-width: 90px;
+        max-width: 180px;
     }
 
     #post-button {
         font-family: $ptsansfont;
         font-weight: 700;
-        max-width: 120px;
         width: 100%;
-        height: 100%;
-        font-size: 2em;
+        font-size: 1.5em;
+        vertical-align: middle;
         background-color: white;
         border: 4px solid $postcolor;
         color: $postcolor;
         border-radius: 10px;
         box-sizing: border-box;
         margin: 0;
-        vertical-align: top;
+        vertical-align: middle;
         text-shadow: 0 0 2px #999;
     }
 
