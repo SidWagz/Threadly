@@ -1,0 +1,103 @@
+/* Css file for threadly project */
+
+@import '_fonts';
+
+$ptsansfont : 'PT Sans Caption';
+$stdfontsize : 12pt;
+$postcolor: #54ff9f;
+
+body {
+
+    min-width: 240px;
+
+    font-family: $ptsansfont;
+    font-size: $stdfontsize;
+
+    div {
+        box-sizing: border-box;
+    }
+
+    .section {
+        max-width: 1080px;
+    }
+
+    .wrapper {
+    }
+
+    .header {
+        font-weight: 700;
+        font-size: 3em;
+    }
+
+    .form {
+        margin: 50px 0;
+    }
+
+    form[name="comment-form"] {
+        width: inherit;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .form-element {
+        font-size: $stdfontsize;
+        height: 3em;
+    }
+
+    .form-input {
+        // background-color: yellow;
+        // border: 1px solid blue;
+        flex: 1 1 70%;
+        min-width: 120px;
+        margin-right: 10px;
+    }
+
+    #input-box {
+        font-family: $ptsansfont;
+        width: 100%;
+        font-size: 30px;
+        margin-right: 10px;
+        outline: none;
+        box-sizing: border-box;
+        margin: 0;
+        vertical-align: top;
+    }
+
+    .form-button {
+        // background-color: red;
+        // border: 1px solid red;
+        flex: 0 0 15%;
+        min-width: 90px;
+        max-width: 180px;
+    }
+
+    #post-button {
+        font-family: $ptsansfont;
+        font-weight: 700;
+        width: 100%;
+        font-size: 1.5em;
+        vertical-align: middle;
+        background-color: white;
+        border: 4px solid $postcolor;
+        color: $postcolor;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin: 0;
+        vertical-align: middle;
+        text-shadow: 0 0 2px #999;
+        cursor: pointer;
+    }
+
+    #comments {
+        list-style: none;
+        padding: 0;
+    }
+
+    .list-comment {
+        font-size: 2em;
+        border-left: 2px solid $postcolor;
+        padding-left: 10px;
+        margin: 5px 0px;
+    }
+}
