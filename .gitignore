@@ -1,2 +1,3 @@
-css/*.map
+html/css/*.map
 .sass-cache/*
+.idea/*
