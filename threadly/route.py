@@ -4,17 +4,12 @@ from threadly.decor import templated
 from threadly import app
 
 import os
-STATIC_HTML = os.path.dirname(__file__) + '../html/static'
+HTML_TEMPLATES = '/'.join((os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'html'))
 
 threadly = Blueprint('threadly', __name__, url_prefix='/',
-                     template_folder='/Users/siddharth/Workspaces/Web/mini-projects/Threadly/html',
-                     static_folder=STATIC_HTML)
-
+                     template_folder=HTML_TEMPLATES)
 
 @threadly.route('/')
 @templated('home.html')
 def home():
-    return {
-        'html_css': url_for('threadly.static', filename='css/threadly.min.css'),
-        'html_js': url_for('threadly.static', filename='js/threadly.js'),
-    }
+    return {}

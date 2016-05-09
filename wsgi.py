@@ -1,5 +1,5 @@
 
-from threadly import app
+from threadly import app as application
 
 if __name__ == "__main__":
 
