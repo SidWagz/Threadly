@@ -1,4 +1,5 @@
 html/css/*.map
 .sass-cache/*
 .idea/*
+__pycache__/*
 threadly/__pycache__/*
