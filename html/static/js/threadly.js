@@ -2,7 +2,11 @@
 
 $(document).ready(function() {
     $("form[name='comment-form']").submit(function() {
-        var message = $("input#input-box").val();
+        var message = $("input#input-box").val().trim();
+
+        if(!message)
+            return false;
+
         var element = $("<li>");
         element.html(message);
         element.addClass("list-comment")
