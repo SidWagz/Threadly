@@ -8,4 +8,4 @@ if __name__ == "__main__":
     HOST = os.environ.get('SERVER_HOST', 'localhost')
     PORT = os.environ.get('SERVER_PORT', 8081)
 
-    app.run(HOST, PORT)
+    application.run(HOST, PORT)
