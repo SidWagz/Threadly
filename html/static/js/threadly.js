@@ -7,10 +7,18 @@ $(document).ready(function() {
         if(!message)
             return false;
 
-        var element = $("<li>");
-        element.html(message);
-        element.addClass("list-comment")
-        $("ul#comments").prepend(element);
+        $.post(
+            $(this).attr('action'),
+            $(this).serialize(),
+            function (data) {
+                if (data['user.name'])
+                    message = message + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;->&nbsp;" + data['user.name'];
+                var element = $("<li>");
+                element.html(message);
+                element.addClass("list-comment")
+                $("ul#comments").prepend(element);
+            }, 'json');
+
         return false;
     });
 });
